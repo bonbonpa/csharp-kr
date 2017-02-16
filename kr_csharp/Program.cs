@@ -10,6 +10,7 @@ namespace kr_csharp
     {
         static void Main(string[] args)
         {
+            //sec 4 input output
             Console.WriteLine("Hello KR");
             Console.ReadLine();
 
@@ -20,17 +21,7 @@ namespace kr_csharp
             bool gg = true;
             string td = "111111";
 
-            Console.WriteLine("MyName" + num);
-            Console.WriteLine("Grade" + number);
-            Console.WriteLine("Ages" + fl);
-            Console.WriteLine("status" + gg);
-            //Type 
-            //string to double
-            int result ;
-            int.TryParse(td,out result);
-            number = number + result;
-            Console.WriteLine(number);
-
+            Console.WriteLine("Please any key.... {0} age={1}..{2} " , number,fl,td );
 
             Console.ReadKey();
 
