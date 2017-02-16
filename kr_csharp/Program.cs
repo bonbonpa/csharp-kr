@@ -10,10 +10,22 @@ namespace kr_csharp
     {
         static void Main(string[] args)
         {
+            int result = 0;
             //sec 4 input output
-            Console.Write("Please input here : ");
+            Console.Write("Please input here year : ");
             string inputd = Console.ReadLine();
-            Console.WriteLine("Hello :"  + inputd);
+            try
+            {
+                int.TryParse(inputd, out result);
+                result += 543;
+            }
+            catch
+            {
+
+            }
+
+            Console.WriteLine("Hello :" + inputd);
+            Console.WriteLine("Hello Year:"  + result);
             Console.ReadKey();
         }
     }
